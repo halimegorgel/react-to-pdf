@@ -54,7 +54,7 @@ class ReactToPdf extends PureComponent {
 
   render() {
     const { children } = this.props;
-    return children({ toPdf: this.toPdf, targetRef: this.targetRef });
+    return children({ toPdf: this.toPdf, toPrint: this.toPrint, targetRef: this.targetRef });
   }
 }
 
